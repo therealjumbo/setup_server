@@ -29,5 +29,5 @@ commands that do not involve installing software or symlinking dotfiles.
 
 ## Notes
 * this script enables automatic security updates
-* ssh-copy-id to server
-* disable ssh password access
+* you must manually ssh-copy-id to server
+* then disable ssh password access
