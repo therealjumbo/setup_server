@@ -1,5 +1,5 @@
 # setup_server
-This repository includes all of my customizations to setup and run a SOHO server
+This repository includes all of my scripts to setup and run a simple server
 
 ## Supported OS's
 * Ubuntu Bionic Beaver 18.04
@@ -17,3 +17,17 @@ cd setup_server
 ```
 ./run.sh
 ```
+
+1. `./run.sh` should be the script that the user runs normally, although the other
+scripts can be run independently.
+
+2. The `./install/install.sh` script is run. This script just installs software
+packages.
+
+3. The `./setup/setup.sh` script is run. This script is for any setup
+commands that do not involve installing software or symlinking dotfiles.
+
+## Notes
+* this script enables automatic security updates
+* ssh-copy-id to server
+* disable ssh password access
